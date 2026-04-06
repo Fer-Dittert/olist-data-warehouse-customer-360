@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: raw_olist
+    description: "Dados brutos da Olist catalogados e disponibilizados no Redshift como fonte inicial do projeto."
+    database: dev
+    schema: public
+
+    tables:
+      - name: customers
+        description: "Tabela bruta de clientes."
+      - name: orders
+        description: "Tabela bruta de pedidos."
+      - name: order_items
+        description: "Tabela bruta de itens dos pedidos."
+      - name: products
+        description: "Tabela bruta de produtos."
+      - name: sellers
+        description: "Tabela bruta de vendedores."
+      - name: order_payments
+        description: "Tabela bruta de pagamentos."
+      - name: order_reviews
+        description: "Tabela bruta de avaliações."
